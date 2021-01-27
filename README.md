@@ -16,7 +16,7 @@ Here's what it does:
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 * [Docker Images](https://www.docker.com/)
 * [DockerHub](https://www.docker.com/)
-* [Html,CSS]
+* Html,CSS
 
 
 
@@ -25,30 +25,40 @@ Here's what it does:
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+There are three ways to test this program:
+* Clone the repo and run flask application locally.
+* Build docker image and run the docker image locally.
+* Pull the docker image and run from docker hub.
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
 
-### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+### 1. Run Flask application locally.
+
+1. Clone the repo
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
    ```
-3. Install NPM packages
+2. Install Flask
    ```sh
-   npm install
+   pip install Flask
    ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
+4. Go to the folder where you cloned the repo and run below command
+   ```sh
+   python app.py
    ```
+   #### Possible output: 
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with fsevents reloader
+ * Debugger is active!
+ * Debugger PIN: 262-475-265
 
+5. Open your browser and type in "http://127.0.0.1:5000/"
+   If done correctly you will see the screen as shown above.
 
 
 <!-- USAGE EXAMPLES -->
