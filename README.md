@@ -42,11 +42,11 @@ There are three ways to test this program:
    ```sh
    pip install Flask
    ```
-4. Go to the folder where you cloned the repo and run below command
+3. Go to the path where you cloned the repo and run below command
    ```sh
    python app.py
    ```
-   #### Possible output: 
+  Possible output: 
  ``` * Serving Flask app "app" (lazy loading)
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
@@ -57,51 +57,58 @@ There are three ways to test this program:
  * Debugger is active!
  * Debugger PIN: 262-475-265 
  ```
-
-5. Open your browser and type in "http://127.0.0.1:5000/"
+4. Try testing using curl 
+   ```sh
+   curl http://127.0.0.1:5000/results -d '{"text1": "text one","text2":"text two"}' -H 'Content-Type: application/json'
+   ```
+5. Open your browser and type in "http://127.0.0.1:5000/" \
    If done correctly you will see the screen as shown above.
 
+   
+### 2. Build and run Docker Image locally.
 
-<!-- USAGE EXAMPLES -->
-## Usage
+1. Clone the repo
+   ```sh
+   git clone https://github.com/your_username_/Project-Name.git
+   ```
+2. Go to the path where you cloned the repo and run below command
+   ```sh
+   docker build -t text_similarity .
+   ```
+3. In the same path
+   ```sh
+   docker run -d -p 5000:5000 text_similarity
+   ```
+4. Try testing using curl 
+   ```sh
+   curl http://127.0.0.1:5000/results -d '{"text1": "text one","text2":"text two"}' -H 'Content-Type: application/json'
+   ```
+5. Now the docker is running in port 5000. Open your browser and type in "http://127.0.0.1:5000/" \
+   If done correctly you will see the screen as shown above.
+   
+   
+### 3. Pull and run Docker Container from DockerHub.
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
+1. Pull the Docker Image from Docker hub
+   ```sh
+   docker pull divyadbscience/text_similarity:firsttry
+   ```
+2. Run the docker with below command
+   ```sh
+   docker run -d -p 5000:5000 divyadbscience/text_similarity:firsttry
+   ```
+3. Try testing using curl 
+   ```sh
+   curl http://127.0.0.1:5000/results -d '{"text1": "text one","text2":"text two"}' -H 'Content-Type: application/json'
+   ```
+4. Now the docker is running in port 5000. Open your browser and type in "http://127.0.0.1:5000/" \
+   If done correctly you will see the screen as shown above.
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Your Name - [Sridivya Pagadala] - divyadbscience@gmail.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
