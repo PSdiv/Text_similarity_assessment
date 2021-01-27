@@ -116,9 +116,9 @@ There are three ways to test this program:
 
 
 <!-- CONTACT -->
-## Contact
+## Please Contact if you like my work :)
 
-Your Name - [Sridivya Pagadala] - divyadbscience@gmail.com
+Sridivya Pagadala - divyadbscience@gmail.com
 
 Project Link: [https://github.com/PSdiv/Text_similarity_assessment](https://github.com/PSdiv/Text_similarity_assessment)
 
