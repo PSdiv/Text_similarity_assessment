@@ -1,6 +1,6 @@
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/PSdiv/Text_similarity_assessment/blob/main/WebApp_text_similarity.jpg)
+![alt text](https://github.com/PSdiv/Text_similarity_assessment/blob/main/WebApp_text_similarity.jpg)
 
 The application developed here takes two texts as input in a web service and produces text similarity between them on a scale of 0 to 1. 
 
