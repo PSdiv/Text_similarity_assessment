@@ -1,6 +1,6 @@
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://github.com/PSdiv/Text_similarity_assessment/blob/main/WebApp_text_similarity.jpg)
 
 The application developed here takes two texts as input in a web service and produces text similarity between them on a scale of 0 to 1. 
 
@@ -36,7 +36,7 @@ There are three ways to test this program:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/PSdiv/Text_similarity_assessment.git
    ```
 2. Install Flask
    ```sh
@@ -69,7 +69,7 @@ There are three ways to test this program:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/PSdiv/Text_similarity_assessment.git
    ```
 2. Go to the path where you cloned the repo and run below command
    ```sh
@@ -91,11 +91,11 @@ There are three ways to test this program:
 
 1. Pull the Docker Image from Docker hub
    ```sh
-   docker pull divyadbscience/text_similarity:firsttry
+   docker pull divyadbscience/text_similarity:v2
    ```
 2. Run the docker with below command
    ```sh
-   docker run -d -p 5000:5000 divyadbscience/text_similarity:firsttry
+   docker run -d -p 5000:5000 divyadbscience/text_similarity:v2
    ```
 3. Try testing using curl 
    ```sh
@@ -110,5 +110,5 @@ There are three ways to test this program:
 
 Your Name - [Sridivya Pagadala] - divyadbscience@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/PSdiv/Text_similarity_assessment](https://github.com/PSdiv/Text_similarity_assessment)
 
