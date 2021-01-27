@@ -20,6 +20,14 @@ Here's what it does:
 * [DockerHub](https://www.docker.com/)
 * Html,CSS
 
+### Solution involes
+
+* Preprocessing of text
+** Removing Punctuations
+** Make text case insensitive
+** Expand Contractions. Eg: I'm => I am
+* Generating TF-IDF vectors from scratch without using Scikit learn
+* Cosine similarity metric for calculating similarity scores.
 
 
 <!-- GETTING STARTED -->
