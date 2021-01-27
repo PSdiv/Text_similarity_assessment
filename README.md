@@ -23,7 +23,7 @@ Here's what it does:
 ### Solution involes
 
 * Preprocessing of text
-** Removing Punctuations
+- * Removing Punctuations
 ** Make text case insensitive
 ** Expand Contractions. Eg: I'm => I am
 * Generating TF-IDF vectors from scratch without using Scikit learn
