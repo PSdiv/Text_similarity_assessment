@@ -3,6 +3,7 @@ import re
 import numpy as np
 from collections import Counter
 import math
+import string
 
 
 # Contraction Map
@@ -152,6 +153,19 @@ def expand_contractions(text, contraction_mapping=CONTRACTION_MAP):
     expanded_text = re.sub("'", '', expanded_text)
     return expanded_text
 
+def preprocess_text(corpus):
+    # Expand Contractions and remove punctuations
+    corpus = [expand_contractions(x).translate(str.maketrans('', '', string.punctuation)) for x in corpus]
+    new_corpus =[]
+    for line in corpus:
+        new_line =[]
+        for word in line.split():
+            new_line.append(word.lower())
+        new_corpus.append(" ".join(new_line))    
+    return new_corpus 
+    
+    
+
 # Metric for similarity calculation
 def cosine_sim(a, b):
     cos_sim = np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
@@ -206,4 +220,20 @@ def transform(dataset, vocabulary, idf_values):
     output = normalized(sparse_matrix)
     return output
 
-
+def predict(corpus):
+    
+    Vocabulary, idf_of_vocabulary = fit(corpus)
+    final_output = transform(corpus,Vocabulary,idf_of_vocabulary)
+    output = round(cosine_sim(final_output[0],final_output[1]), 2)
+    return output
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
