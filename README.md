@@ -47,7 +47,7 @@ There are three ways to test this program:
    python app.py
    ```
    #### Possible output: 
- * Serving Flask app "app" (lazy loading)
+ ``` * Serving Flask app "app" (lazy loading)
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
@@ -55,7 +55,8 @@ There are three ways to test this program:
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
  * Restarting with fsevents reloader
  * Debugger is active!
- * Debugger PIN: 262-475-265
+ * Debugger PIN: 262-475-265 
+ ```
 
 5. Open your browser and type in "http://127.0.0.1:5000/"
    If done correctly you will see the screen as shown above.
