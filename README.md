@@ -1,8 +1,10 @@
 ## About The Project
 
-![alt text](https://github.com/PSdiv/Text_similarity_assessment/blob/main/WebApp_text_similarity.jpg)
+
 
 The application developed here takes two texts as input in a web service and produces text similarity between them on a scale of 0 to 1. 
+
+![alt text](https://github.com/PSdiv/Text_similarity_assessment/blob/main/WebApp_text_similarity.jpg)
 
 Here's what it does:
 * If the two texts are exactly same meaning all the words are same in both the texts. Then the output will be 1.0.
