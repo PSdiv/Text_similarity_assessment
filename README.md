@@ -114,9 +114,10 @@ There are three ways to test this program:
 4. Now the docker is running in port 5000. Open your browser and type in "http://127.0.0.1:5000/" \
    If done correctly you will see the screen as shown above.
 
-
+## Hope you liked it :)
 <!-- CONTACT -->
-## Please Contact if you like my work :)
+
+## Contact
 
 Sridivya Pagadala - divyadbscience@gmail.com
 
