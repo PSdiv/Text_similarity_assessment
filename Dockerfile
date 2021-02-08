@@ -5,10 +5,10 @@
  WORKDIR /app 
  
  
- #Installing python packages pandas, scikit-learn and gunicorn
+ #Installing python packages pandas and gunicorn
  RUN pip install numpy flask gunicorn
  
- # Copy the models directory and server.py files
+ # Copy the models directory and app.py files
  ADD ./static ./static
  ADD ./static/css ./static/css
  ADD ./templates ./templates
